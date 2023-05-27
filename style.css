@@ -1,191 +1,346 @@
-
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-html,body{
-    width: 95%;
+body {
+  /* width: 95%; */
+  /* margin: 50px auto; */
+
+  /* background-image: url("images/youngplant.jpg");
+  background-color: rgba(158, 209, 179, 0.5); */
+  margin: 0;
+  width: 100%;
+  display: flex;
+  overflow-y: hidden;
+}
+
+.photo-half {
+  background: linear-gradient(rgba(25, 113, 16, 0.4), rgba(25, 113, 16, 0.4)),
+    url("images/wallp.jpg");
+  width: 50vw;
+  height: 100vh;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.plant-diagnostic {
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  /* padding-top: 50px;
+  padding-left: 100px; */
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.content-half {
+  background-color: #f7f7ed;
+  width: 50vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.content-title {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5c7f6d;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/* @media (min-width: 768px) {
+  html,
+  body {
+    width: 80%;
     margin: 50px auto;
-    background: rgb(158, 209, 179);
-}
-
-@media (min-width: 768px){
-    html,body{
-        width: 80%;
-        margin: 50px auto;
-    }
-}
+  }
+} */
 h1 {
-    margin: 10px auto;
-    text-transform: uppercase;
+  /* margin: 10px auto;
+  text-transform: uppercase; */
 }
 
-h1 span{
-    color: limegreen;
+h1 span {
+  color: limegreen;
 }
 
-hr{
-    margin: 10px 0px;
+hr {
+  margin: 10px 0px;
 }
 
-.github-fork-ribbon:before{
-    background: limegreen !important;
+.github-fork-ribbon:before {
+  background: limegreen !important;
 }
 
-
-.upload-btn-wrapper{
-    position: relative;
-    overflow:hidden;
-    display:inline-block;
-    cursor:pointer;
-    font-family: 'Poppins',sans-serif;
-    width: 100%;
-    margin: 20px 0px;
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100%; */
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  /* width: 100%; */
+  margin-top: 5%;
 }
-.upload-file{
-    border:2px dashed #eee;
-    color:#9b9b9b;
-    background-color: white;
-    width:100%;
-    height:250px;
-    border-radius: 8px;
-    font-size:15px;
-    cursor: pointer;
+.upload-file {
+  border: 2px dashed #eee;
+  color: #9b9b9b;
+  background-color: white;
+  width: 400px;
+  height: 250px;
+  border-radius: 8px;
+  font-size: 15px;
+  /* cursor: pointer; */
 }
-.upload-btn-wrapper input[type=file]{
-    width:100%;
-    position: absolute;
-    left:0;
-    right:0;
-    top:0;
-    opacity: 0;
-    cursor: pointer;
-    min-height: 300px;
+.upload-btn-wrapper input[type="file"] {
+  /* width: 100%; */
+  width: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+  min-height: 300px;
 }
-.success-1, .success-2{
-    display:none;
-    color: limegreen;
+.success-1,
+.success-2 {
+  display: none;
+  color: limegreen;
 }
-.success-1 i, .success-2 i{
-    font-size: 18px !important;
-    margin-left:6px;
-    margin-top:4px;
-    color: limegreen;
-    border: 1px solid limegreen;
-    padding: 5px;
-    border-radius: 50%;
+.success-1 i,
+.success-2 i {
+  font-size: 18px !important;
+  margin-left: 6px;
+  margin-top: 4px;
+  color: limegreen;
+  border: 1px solid limegreen;
+  padding: 5px;
+  border-radius: 50%;
 }
-.font-50{
-    font-size:50px;
+.font-50 {
+  font-size: 50px;
 }
-.d-block{
-    display:block;
+.d-block {
+  display: block;
 }
-.btn .upload-file{
-    font-size: 30px;
+.btn .upload-file {
+  font-size: 30px;
 }
-.upload-btn{
-    display:block;
-    font-size: 18px;
-    color: limegreen;
-}
-
-.upload-btn i{
-    font-size: 100px;
-}
-
-img{
-    width: 100%;
-    height: 300px;
-    display: none;
+.upload-btn {
+  display: block;
+  font-size: 18px;
+  color: limegreen;
 }
 
-.row{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-flow: wrap;
-    margin: 20px auto;
-    }
-
-.box{
-    width: 45%;
+.upload-btn i {
+  font-size: 100px;
 }
 
-.box img{
-    border-radius: 20px;
-    height: 350px;
+img {
+  width: 100%;
+  height: 300px;
+  display: none;
 }
 
-.box-result p{
-    background: limegreen;
-    color: #fff;
-    font-weight: bold;
-    padding: 10px;
-    margin-top: 20px;
-    border-radius: 10px;
-    display : none;
-    text-align: center;
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-flow: wrap;
+  margin: 20px auto;
+  margin-top: 30px;
 }
 
-.box-result{
-    display: none;
+.box {
+  width: 45%;
 }
 
-.accuracy{
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
+.box img {
+  border-radius: 20px;
+  height: 350px;
 }
 
+.box-result p {
+  background: limegreen;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  display: none;
+  text-align: center;
+}
+
+.box-result {
+  display: none;
+}
+
+.accuracy {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
 
 .progress {
-width: 130px;
-height: 130px;
-position: relative;
-display: flex;
-align-items: center;
-justify-content: center;
-
+  width: 130px;
+  height: 130px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .progress > .inner {
-position: absolute;
-color: limegreen;
-border: 1px solid #9b9b9b;
+  position: absolute;
+  color: limegreen;
+  border: 1px solid #9b9b9b;
 }
 
 .progress > svg {
-height: 100%;
-display: block;
+  height: 100%;
+  display: block;
 }
 
-.init_status{
-    background: limegreen;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    transition: ease-in-out .5s;
-    text-align: center;
-    margin: 10px 0px;
-
+.init_status {
+  background: limegreen;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  transition: ease-in-out 0.5s;
+  text-align: center;
+  margin: 10px 0px;
 }
 
-@media (max-width: 768px){
-    .box{
-        width: 100%;
-    }
+@media (max-width: 768px) {
+  .box {
+    width: 100%;
+  }
 }
 
-.tutorial{
-    text-align: center;
-    color: #222222;
+.tutorial {
+  text-align: center;
+  color: #222222;
 }
 
 path {
-    stroke: limegreen;
-    stroke-width: 10;
-    fill-opacity: 0.2;
+  stroke: limegreen;
+  stroke-width: 10;
+  fill-opacity: 0.2;
+}
+
+/* header {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  background-color: #5ba72b;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+} */
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  gap: 30%;
+}
+
+/* .topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+} */
+
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+#hamnav {
+  /* width: 100%;
+  display: flex;
+  align-items: center; */
+}
+
+/* (B) HORIZONTAL MENU ITEMS */
+#hamitems {
+  display: flex;
+}
+#hamitems li {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+  display: block;
+}
+/* (C) HIDE HAMBURGER */
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 5000px) {
+  /* (A) BREAK INTO VERTICAL MENU */
+  #hamitems li {
+  }
+
+  /* (B) SHOW HAMBURGER ICON */
+  #hamnav label {
+    display: block;
+    font-style: normal;
+    font-size: 2rem;
+    /* padding: 10px; */
+  }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems {
+    display: none;
+  }
+  #hamnav input:checked ~ #hamitems {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 0;
+  }
+}
+
+.ham-full {
+  width: 100%;
+  /* display: flex;
+  justify-content: end; */
+  text-align: right;
+  margin-top: 20px;
+  margin-left: -25px;
 }
