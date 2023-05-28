@@ -65,13 +65,20 @@ async function predict() {
     let time =
       today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     let dateTime = date + " " + time;
-
+    let guid =
+      Math.random().toString(36).substring(2, 15) +
+      Math.random().toString(36).substring(2, 15);
     let plantName, plantStatus;
     plantName = data[class_idx].split("___")[0];
     plantStatus = data[class_idx].split("___")[1].split("_").join(" ");
-    let userArray = [plantName, plantStatus];
-    localStorage.setItem(dateTime, JSON.stringify(userArray));
-
+    let userArray = [
+      plantName,
+      plantStatus,
+      dateTime,
+      Math.round(prediction[class_idx] * 100),
+    ];
+    localStorage.setItem(guid, JSON.stringify(userArray));
+    console.log(JSON.stringify(localStorage));
     progressBar.animate(prediction[class_idx] - 0.005);
 
     pconf.style.display = "block";
