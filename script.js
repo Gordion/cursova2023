@@ -69,8 +69,8 @@ async function predict() {
     let plantName, plantStatus;
     plantName = data[class_idx].split("___")[0];
     plantStatus = data[class_idx].split("___")[1].split("_").join(" ");
-    let userArray = [plantName, plantStatus, dateTime];
-    localStorage.setItem("dataPlant", JSON.stringify(userArray));
+    let userArray = [plantName, plantStatus];
+    localStorage.setItem(dateTime, JSON.stringify(userArray));
 
     progressBar.animate(prediction[class_idx] - 0.005);
 
