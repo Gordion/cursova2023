@@ -26,7 +26,7 @@ about.addEventListener("click", function () {
 });
 
 for (let i in localStorage) {
-  stats.innerHTML = JSON.parse(localStorage.getItem(localStorage.key(i)))[
+  stats.innerHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[
     (0, 1, 2, 3)
   ];
 }
