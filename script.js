@@ -19,14 +19,14 @@ home.addEventListener("click", function () {
 });
 
 about.addEventListener("click", function () {
-  if (mainSelf.classList.contains("hidden")) {
+  if (stats.classList.contains("hidden")) {
     article.classList.add("hidden");
     stats.classList.remove("hidden");
   }
 });
 
-  for(var i in localStorage) {
-    stats.innerHTML() = JSON.parse(localStorage[i])[0,1,2,3];
+for (var i in localStorage) {
+  stats.innerHTML = JSON.parse(localStorage[i])[(0, 1, 2, 3)];
 }
 
 let progressBar = new ProgressBar.Circle("#progress", {
