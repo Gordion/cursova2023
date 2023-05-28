@@ -45,6 +45,9 @@ async function predict() {
     predicted_class = tf.argMax(prediction);
 
     class_idx = Array.from(predicted_class.dataSync())[0];
+    let plantName, plantStatus;
+    plantName = data[class_idx].split("___")[0];
+    plantStatus = data[class_idx].split("___")[1].split("_").join(" ");
     document.querySelector(".plant-name").innerHTML = plantName;
     document.querySelector(".pred_class").innerHTML = plantStatus;
     document.querySelector(".inner").innerHTML = `${parseFloat(
@@ -69,9 +72,7 @@ async function predict() {
     let guid =
       Math.random().toString(36).substring(2, 15) +
       Math.random().toString(36).substring(2, 15);
-    let plantName, plantStatus;
-    plantName = data[class_idx].split("___")[0];
-    plantStatus = data[class_idx].split("___")[1].split("_").join(" ");
+
     let userArray = [
       plantName,
       plantStatus,
