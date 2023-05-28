@@ -28,8 +28,8 @@
           <label for="hamburger">&#9776;</label>
           <input type="checkbox" id="hamburger" />
           <ul id="hamitems">
-            <li id="home">Home</li>
-            <li id="about">About me</li>
+            <li id="home">Діагностика</li>
+            <li id="about">Візуалізація</li>
           </ul>
         </nav>
       </div>
@@ -38,11 +38,19 @@
       <a href="#contact">Contact</a>
       <a href="#about">About</a> -->
       <div class="content-title">Провести діагностику рослини</div>
+      <div class="content-text">
+        Завантажте тестові фотографії за посиланням в
+        <a
+          href="https://github.com/Gordion/cursova2023/tree/24d4751ff0361fd6d0fd9ab6bd6be9a00fcfbdd2/test-images"
+          target="_blank"
+          >github</a
+        >
+      </div>
       <div class="upload-btn-wrapper">
         <button class="btn upload-file font-weight-500">
           <span class="upload-btn">
             <i class="material-icons d-block font-50 pb-2">cloud_upload</i>
-            <p id="choose-text-1">Choose Image of Crop leaf</p>
+            <p id="choose-text-1">Виберіть фотографію листка рослини</p>
           </span>
           <span class="upload-select-button" id="blankFile-1">
             *Supports .png, .jpg, .jpeg, .jfif
@@ -63,7 +71,7 @@
           <div class="init_status"></div>
           <div>
             <h2>
-              Your Plant is infected with :- <span class="pred_class"></span>
+              Ваша рослина захворіла на :- <span class="pred_class"></span>
             </h2>
           </div>
           <div class="accuracy">
@@ -72,7 +80,7 @@
             </div>
           </div>
           <p style="padding: 10px">
-            CONFIDENCE : <b><span class="confidence"></span></b> %
+            Точність: <b><span class="confidence"></span></b> %
           </p>
         </div>
       </div>

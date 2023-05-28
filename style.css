@@ -62,6 +62,22 @@ body {
   margin-top: 50px;
 }
 
+.content-text {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  color: #5c7f6d;
+  font-weight: 400;
+  /* text-transform: uppercase; */
+  /* width: 50%;
+  margin: 0 auto;
+  margin-top: 50px; */
+  margin-top: 20px;
+}
+
 /* @media (min-width: 768px) {
   html,
   body {
@@ -76,6 +92,10 @@ h1 {
 
 h1 span {
   color: limegreen;
+}
+
+h2 {
+  text-align: center;
 }
 
 hr {
@@ -97,7 +117,7 @@ hr {
   font-family: "Poppins", sans-serif;
   margin: 0 auto;
   /* width: 100%; */
-  margin-top: 5%;
+  margin-top: 10px;
 }
 .upload-file {
   border: 2px dashed #eee;
@@ -295,6 +315,14 @@ path {
 #hamitems {
   display: flex;
 }
+
+#home,
+#about {
+  margin-right: 50px;
+  margin-top: -40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
 #hamitems li {
   flex-grow: 1;
   flex-basis: 0;
@@ -327,19 +355,21 @@ path {
   /* (C) TOGGLE SHOW/HIDE MENU */
   #hamitems {
     display: none;
+    line-height: 36px;
+    gap: 20px;
   }
   #hamnav input:checked ~ #hamitems {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     line-height: 0;
   }
 }
 
 .ham-full {
   width: 100%;
-  /* display: flex;
-  justify-content: end; */
+  display: flex;
+  justify-content: end;
   text-align: right;
   margin-top: 20px;
   margin-left: -25px;
