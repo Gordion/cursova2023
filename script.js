@@ -6,6 +6,29 @@ let boxResult = document.querySelector(".box-result");
 let confidence = document.querySelector(".confidence");
 let pconf = document.querySelector(".box-result p");
 
+const article = document.getElementById("article");
+const stats = document.getElementById("stats");
+const home = document.getElementById("home");
+const about = document.getElementById("about");
+
+home.addEventListener("click", function () {
+  if (article.classList.contains("hidden")) {
+    article.classList.remove("hidden");
+    stats.classList.add("hidden");
+  }
+});
+
+about.addEventListener("click", function () {
+  if (mainSelf.classList.contains("hidden")) {
+    article.classList.add("hidden");
+    stats.classList.remove("hidden");
+  }
+});
+
+  for(var i in localStorage) {
+    stats.innerHTML() = JSON.parse(localStorage[i])[0,1,2,3];
+}
+
 let progressBar = new ProgressBar.Circle("#progress", {
   color: "limegreen",
   strokeWidth: 10,

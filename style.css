@@ -91,6 +91,14 @@ h1 {
   text-transform: uppercase; */
 }
 
+.hidden {
+  display: none !important;
+}
+.pred_class,
+.plant-name {
+  text-decoration: underline;
+}
+
 .plant-name {
   font-weight: 600;
 }
