@@ -9,7 +9,7 @@ let pconf = document.querySelector(".box-result p");
 let progressBar = new ProgressBar.Circle("#progress", {
   color: "limegreen",
   strokeWidth: 10,
-  duration: 2000, // milliseconds
+  duration: 2000,
   easing: "easeInOut",
 });
 
@@ -21,9 +21,6 @@ async function fetchData() {
   return data;
 }
 
-// here the data will be return.
-
-// Initialize/Load model
 async function initialize() {
   let status = document.querySelector(".init_status");
   status.innerHTML =
@@ -34,7 +31,6 @@ async function initialize() {
 }
 
 async function predict() {
-  // Function for invoking prediction
   let img = document.getElementById("image");
   let offset = tf.scalar(255);
   let tensorImg = tf.browser
@@ -52,12 +48,12 @@ async function predict() {
     document.querySelector(".pred_class").innerHTML = data[class_idx];
     document.querySelector(".inner").innerHTML = `${parseFloat(
       prediction[class_idx] * 100
-    ).toFixed(2)}% SURE`;
+    ).toFixed(2)}%`;
     console.log(data);
     console.log(data[class_idx]);
     console.log(prediction);
 
-    progressBar.animate(prediction[class_idx] - 0.005); // percent
+    progressBar.animate(prediction[class_idx] - 0.005);
 
     pconf.style.display = "block";
 
