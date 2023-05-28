@@ -51,7 +51,26 @@ async function predict() {
     ).toFixed(2)}%`;
     console.log(data);
     console.log(data[class_idx]);
+    console.log(data[class_idx].split("___"));
+    console.log(data[class_idx].split("___")[1].split("_"));
     console.log(prediction);
+
+    let today = new Date();
+    let date =
+      today.getFullYear() +
+      "-" +
+      (today.getMonth() + 1) +
+      "-" +
+      today.getDate();
+    let time =
+      today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    let dateTime = date + " " + time;
+
+    let plantName, plantStatus;
+    plantName = data[class_idx].split("___")[0];
+    plantStatus = data[class_idx].split("___")[1].split("_").join(" ");
+    let userArray = [plantName, plantStatus, dateTime];
+    localStorage.setItem("dataPlant", JSON.stringify(userArray));
 
     progressBar.animate(prediction[class_idx] - 0.005);
 
