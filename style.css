@@ -91,6 +91,10 @@ h1 {
   text-transform: uppercase; */
 }
 
+.plant-name {
+  font-weight: 600;
+}
+
 h1 span {
   color: limegreen;
 }

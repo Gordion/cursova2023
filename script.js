@@ -45,7 +45,8 @@ async function predict() {
     predicted_class = tf.argMax(prediction);
 
     class_idx = Array.from(predicted_class.dataSync())[0];
-    document.querySelector(".pred_class").innerHTML = data[class_idx];
+    document.querySelector(".plant-name").innerHTML = plantName;
+    document.querySelector(".pred_class").innerHTML = plantStatus;
     document.querySelector(".inner").innerHTML = `${parseFloat(
       prediction[class_idx] * 100
     ).toFixed(2)}%`;
