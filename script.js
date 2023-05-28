@@ -26,7 +26,7 @@ about.addEventListener("click", function () {
 });
 
 for (var i in localStorage) {
-  stats.innerHTML = JSON.parse(localStorage[i])[(0, 1, 2, 3)];
+  stats.innerHTML = localStorage[i][(0, 1, 2, 3)];
 }
 
 let progressBar = new ProgressBar.Circle("#progress", {
