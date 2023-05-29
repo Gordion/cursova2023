@@ -25,13 +25,19 @@ about.addEventListener("click", function () {
   }
 });
 let statsHTML = "";
-for (let i in localStorage) {
-  statsHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[0];
-  statsHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[1];
-  statsHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[2];
-  statsHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[3];
+for (let i = 0; i < localStorage.length; i++) {
+  let key = localStorage.key(i);
+  statsHTML += JSON.parse(localStorage.getItem(key))[0];
+  statsHTML += JSON.parse(localStorage.getItem(key))[1];
+  statsHTML += JSON.parse(localStorage.getItem(key))[2];
+  statsHTML += JSON.parse(localStorage.getItem(key))[3];
 }
 stats.innerHTML = statsHTML;
+
+for (let i = 0; i < localStorage.length; i++) {
+  let key = localStorage.key(i);
+  alert(`${key}: ${localStorage.getItem(key)}`);
+}
 // for (let i in localStorage) {
 //   stats.innerHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[1];
 // }
