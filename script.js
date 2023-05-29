@@ -96,7 +96,7 @@ async function predict() {
 
     class_idx = Array.from(predicted_class.dataSync())[0];
     let plantName, plantStatus;
-    plantName = data[class_idx].split("___")[0].split("_").split(",").join(" ");
+    plantName = data[class_idx].split("___")[0].split("_").join(" ");
     plantStatus = data[class_idx].split("___")[1].split("_").join(" ");
     document.querySelector(".plant-name").innerHTML = plantName;
     document.querySelector(".pred_class").innerHTML = plantStatus;
