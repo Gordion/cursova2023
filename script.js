@@ -40,7 +40,7 @@ for (let i = 0; i < localStorage.length; i++) {
   </tr>`;
 }
 
-container.innerHTML = statsHTML;
+container.innerHTML += statsHTML;
 
 // for (let i = 0; i < localStorage.length; i++) {
 //   let key = localStorage.key(i);
