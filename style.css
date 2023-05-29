@@ -242,6 +242,7 @@ th {
 table {
   padding: 20px;
   border: 1px solid black;
+  text-align: center;
 }
 th,
 td {
