@@ -27,16 +27,19 @@ about.addEventListener("click", function () {
 
 for (let i in localStorage) {
   stats.innerHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[0];
-}
-for (let i in localStorage) {
   stats.innerHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[1];
-}
-for (let i in localStorage) {
   stats.innerHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[2];
-}
-for (let i in localStorage) {
   stats.innerHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[3];
 }
+// for (let i in localStorage) {
+//   stats.innerHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[1];
+// }
+// for (let i in localStorage) {
+//   stats.innerHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[2];
+// }
+// for (let i in localStorage) {
+//   stats.innerHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[3];
+// }
 
 let progressBar = new ProgressBar.Circle("#progress", {
   color: "limegreen",
