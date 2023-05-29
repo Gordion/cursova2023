@@ -243,6 +243,10 @@ table {
   padding: 20px;
   border: 1px solid black;
 }
+th,
+td {
+  border: 1px solid black;
+}
 
 .progress {
   width: 130px;
