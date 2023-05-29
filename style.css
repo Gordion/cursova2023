@@ -233,7 +233,10 @@ img {
 }
 
 tr:nth-child(even) {
-  background-color: #0b7537;
+  background-color: rgba(11, 117, 55, 0.4);
+}
+td {
+  background-color: rgba(11, 117, 55, 0.4);
 }
 
 .progress {
