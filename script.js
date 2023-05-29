@@ -24,7 +24,7 @@ about.addEventListener("click", function () {
     stats.classList.remove("hidden");
   }
 });
-let statsHTML;
+let statsHTML = "";
 for (let i in localStorage) {
   statsHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[0];
   statsHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[1];
