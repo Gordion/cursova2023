@@ -232,6 +232,10 @@ img {
   margin-top: 25px;
 }
 
+tr:nth-child(even) {
+  background-color: #0b7537;
+}
+
 .progress {
   width: 130px;
   height: 130px;
