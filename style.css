@@ -235,7 +235,7 @@ img {
 tr:nth-child(even) {
   background-color: rgba(11, 117, 55, 0.4);
 }
-td {
+th {
   background-color: rgba(11, 117, 55, 0.4);
 }
 
