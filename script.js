@@ -36,7 +36,7 @@ for (let i = 0; i < localStorage.length; i++) {
   <td>${JSON.parse(localStorage.getItem(key))[0]}</td>
   <td>${JSON.parse(localStorage.getItem(key))[1]}</td>
   <td>${JSON.parse(localStorage.getItem(key))[2]}</td>
-  <td>${JSON.parse(localStorage.getItem(key))[3]}</td>
+  <td>${JSON.parse(localStorage.getItem(key))[3]}%</td>
   </tr>`;
 }
 
