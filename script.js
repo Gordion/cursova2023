@@ -24,13 +24,14 @@ about.addEventListener("click", function () {
     stats.classList.remove("hidden");
   }
 });
-
+let statsHTML;
 for (let i in localStorage) {
-  stats.innerHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[0];
-  stats.innerHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[1];
-  stats.innerHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[2];
-  stats.innerHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[3];
+  statsHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[0];
+  statsHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[1];
+  statsHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[2];
+  statsHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[3];
 }
+stats.innerHTML = statsHTML;
 // for (let i in localStorage) {
 //   stats.innerHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[1];
 // }
