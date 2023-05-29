@@ -60,7 +60,7 @@ body {
   text-transform: uppercase;
   width: 50%;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .content-text {
@@ -204,11 +204,16 @@ img {
 
 .box {
   width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .box img {
   border-radius: 20px;
-  height: 350px;
+  /* height: 350px; */
+  justify-content: center;
+  align-items: center;
 }
 
 .box-result p {
