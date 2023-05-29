@@ -10,7 +10,7 @@ const article = document.getElementById("article");
 const stats = document.getElementById("stats");
 const home = document.getElementById("home");
 const about = document.getElementById("about");
-
+const container = document.getElementById("container");
 home.addEventListener("click", function () {
   if (article.classList.contains("hidden")) {
     article.classList.remove("hidden");
@@ -27,10 +27,10 @@ about.addEventListener("click", function () {
 let statsHTML = "";
 for (let i = 0; i < localStorage.length; i++) {
   let key = localStorage.key(i);
-  statsHTML += JSON.parse(localStorage.getItem(key))[0];
-  statsHTML += JSON.parse(localStorage.getItem(key))[1];
-  statsHTML += JSON.parse(localStorage.getItem(key))[2];
-  statsHTML += JSON.parse(localStorage.getItem(key))[3];
+  // statsHTML += JSON.parse(localStorage.getItem(key))[0];
+  // statsHTML += JSON.parse(localStorage.getItem(key))[1];
+  // statsHTML += JSON.parse(localStorage.getItem(key))[2];
+  // statsHTML += JSON.parse(localStorage.getItem(key))[3];
   statsHTML += `
   <div class="row border border-dark">
   <div class="col border border-dark">${
