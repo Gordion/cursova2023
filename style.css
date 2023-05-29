@@ -351,9 +351,10 @@ path {
 #home,
 #about {
   margin-right: 50px;
-  margin-top: -40px;
+  margin-top: -60px;
   font-size: 1.2rem;
   font-weight: 600;
+  cursor: pointer;
 }
 #hamitems li {
   flex-grow: 1;
@@ -381,6 +382,7 @@ path {
     display: block;
     font-style: normal;
     font-size: 2rem;
+    cursor: pointer;
     /* padding: 10px; */
   }
 
