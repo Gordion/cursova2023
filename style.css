@@ -239,6 +239,11 @@ th {
   background-color: rgba(11, 117, 55, 0.4);
 }
 
+table {
+  padding: 20px;
+  border: 1px solid black;
+}
+
 .progress {
   width: 130px;
   height: 130px;
