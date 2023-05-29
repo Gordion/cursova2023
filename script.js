@@ -32,20 +32,12 @@ for (let i = 0; i < localStorage.length; i++) {
   // statsHTML += JSON.parse(localStorage.getItem(key))[2];
   // statsHTML += JSON.parse(localStorage.getItem(key))[3];
   statsHTML += `
-  <div class="row border border-dark">
-  <div class="col border border-dark">${
-    JSON.parse(localStorage.getItem(key))[0]
-  }</div>
-  <div class="col border border-dark">${
-    JSON.parse(localStorage.getItem(key))[1]
-  }</div>
-  <div class="col border border-dark">${
-    JSON.parse(localStorage.getItem(key))[2]
-  }</div>
-  <div class="col border border-dark">${
-    JSON.parse(localStorage.getItem(key))[3]
-  }</div>
-  </div>`;
+  <tr>
+  <td>${JSON.parse(localStorage.getItem(key))[0]}</td>
+  <td>${JSON.parse(localStorage.getItem(key))[1]}</td>
+  <td>${JSON.parse(localStorage.getItem(key))[2]}</td>
+  <td>${JSON.parse(localStorage.getItem(key))[3]}</td>
+  </tr>`;
 }
 
 container.innerHTML = statsHTML;
