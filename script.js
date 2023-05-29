@@ -31,13 +31,29 @@ for (let i = 0; i < localStorage.length; i++) {
   statsHTML += JSON.parse(localStorage.getItem(key))[1];
   statsHTML += JSON.parse(localStorage.getItem(key))[2];
   statsHTML += JSON.parse(localStorage.getItem(key))[3];
+  statsHTML += `
+  <div class="row border border-dark">
+  <div class="col border border-dark">${
+    JSON.parse(localStorage.getItem(key))[0]
+  }</div>
+  <div class="col border border-dark">${
+    JSON.parse(localStorage.getItem(key))[1]
+  }</div>
+  <div class="col border border-dark">${
+    JSON.parse(localStorage.getItem(key))[2]
+  }</div>
+  <div class="col border border-dark">${
+    JSON.parse(localStorage.getItem(key))[3]
+  }</div>
+  </div>`;
 }
+
 stats.innerHTML = statsHTML;
 
-for (let i = 0; i < localStorage.length; i++) {
-  let key = localStorage.key(i);
-  alert(`${key}: ${localStorage.getItem(key)}`);
-}
+// for (let i = 0; i < localStorage.length; i++) {
+//   let key = localStorage.key(i);
+//   alert(`${key}: ${localStorage.getItem(key)}`);
+// }
 // for (let i in localStorage) {
 //   stats.innerHTML += JSON.parse(localStorage.getItem(localStorage.key(i)))[1];
 // }
