@@ -79,6 +79,18 @@ body {
   margin-top: 20px;
 }
 
+/* @media (min-width: 768px) {
+  html,
+  body {
+    width: 80%;
+    margin: 50px auto;
+  }
+} */
+h1 {
+  /* margin: 10px auto;
+  text-transform: uppercase; */
+}
+
 .hidden {
   display: none !important;
 }
