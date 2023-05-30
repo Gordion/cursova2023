@@ -263,6 +263,7 @@ td {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
 }
 
 .progress > .inner {
@@ -300,7 +301,7 @@ td {
 path {
   stroke: limegreen;
   stroke-width: 10;
-  fill-opacity: 0.2;
+  fill-opacity: 0.1;
 }
 
 /* header {
