@@ -104,7 +104,7 @@ h1 {
 }
 
 h1 span {
-  color: limegreen;
+  color: #5c7f6d;
 }
 
 h2 {
@@ -116,7 +116,7 @@ hr {
 }
 
 .github-fork-ribbon:before {
-  background: limegreen !important;
+  background: #5c7f6d !important;
 }
 
 .upload-btn-wrapper {
@@ -156,15 +156,15 @@ hr {
 .success-1,
 .success-2 {
   display: none;
-  color: limegreen;
+  color: #5c7f6d;
 }
 .success-1 i,
 .success-2 i {
   font-size: 18px !important;
   margin-left: 6px;
   margin-top: 4px;
-  color: limegreen;
-  border: 1px solid limegreen;
+  color: #5c7f6d;
+  border: 1px solid #5c7f6d;
   padding: 5px;
   border-radius: 50%;
 }
@@ -180,7 +180,7 @@ hr {
 .upload-btn {
   display: block;
   font-size: 18px;
-  color: limegreen;
+  color: #5c7f6d;
 }
 
 .upload-btn i {
@@ -217,7 +217,7 @@ img {
 }
 
 .box-result p {
-  background: limegreen;
+  background: #5c7f6d;
   color: #fff;
   font-weight: bold;
   padding: 10px;
@@ -268,7 +268,7 @@ td {
 
 .progress > .inner {
   position: absolute;
-  color: limegreen;
+  color: #5c7f6d;
   border: 1px solid #9b9b9b;
 }
 
@@ -278,7 +278,7 @@ td {
 }
 
 .init_status {
-  background: limegreen;
+  background: #5c7f6d;
   color: white;
   padding: 10px;
   border-radius: 10px;
@@ -299,7 +299,7 @@ td {
 }
 
 path {
-  stroke: limegreen;
+  stroke: #5c7f6d;
   stroke-width: 10;
   fill-opacity: 0.1;
 }
