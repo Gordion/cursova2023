@@ -106,6 +106,7 @@ h1 {
 .model-text {
   color: #5c7f6d;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 h1 span {
